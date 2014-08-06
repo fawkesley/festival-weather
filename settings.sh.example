@@ -1,0 +1,17 @@
+# Location to get weather forecast
+
+export LOCATION_LATITUDE="51.8624602"
+export LOCATION_LONGITUDE="-1.4916191"
+export LOCATION_ALTITUDE="130"
+export LOCATION_TIMEZONE="Europe/London"
+
+# Twilio SMS account details
+
+export TWILIO_SID="<your account sid>"
+export TWILIO_AUTH_TOKEN="<your secret auth token>"
+export TWILIO_FROM_NUMBER="<your from number"
+
+# Recipient details
+
+export RECIPIENT_NUMBERS="+447790000000,+447791876543"
+
