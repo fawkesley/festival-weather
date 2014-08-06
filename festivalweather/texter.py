@@ -13,7 +13,7 @@ def send_sms(message):
 
     client = TwilioRestClient(account=account, token=token)
 
-    for recipient in recipients:
+    for recipient in filter(None, recipients):
         client.messages.create(
             from_=from_number,
             to=recipient,
