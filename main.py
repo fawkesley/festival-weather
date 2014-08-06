@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from festivalweather import download_latest_forecasts, send_sms
 
