@@ -60,6 +60,13 @@ class TestGetPrecipitationString(TestForecastBase):
 
         assert_equal('dry', forecast.get_precipitation_string())
 
+    def test_that_equal_range_shows_as_single_number(self):
+        forecast = TwoHourlyForecast(
+            start_datetime=self.utc_datetime,
+            temperature=18.6, min_rain=0.4, max_rain=0.4)
+
+        assert_equal('0.4mm', forecast.get_precipitation_string())
+
     def test_that_precipitation_range_have_1_decimal_place(self):
         forecast = TwoHourlyForecast(
             start_datetime=self.utc_datetime,

@@ -38,6 +38,8 @@ class TwoHourlyForecast(namedtuple('TwoHourlyForecast',
     def get_precipitation_string(self):
         if self.max_rain == 0.0:
             return 'dry'
+        elif self.min_rain == self.max_rain:
+            return '{:.1f}mm'.format(round(self.min_rain, 1))
         else:
             return '{:.1f}-{:.1f}mm'.format(
                 round(self.min_rain, 1),
