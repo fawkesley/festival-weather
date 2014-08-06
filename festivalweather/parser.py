@@ -87,7 +87,7 @@ def parse_temperature(time_node):
 
 def parse_precipitation(time_node):
     min_ = time_node.xpath('./location/precipitation[@unit="mm"]/@minvalue')[0]
-    max_ = time_node.xpath('./location/precipitation[@unit="mm"]/@minvalue')[0]
+    max_ = time_node.xpath('./location/precipitation[@unit="mm"]/@maxvalue')[0]
     return float(min_), float(max_)
 
 

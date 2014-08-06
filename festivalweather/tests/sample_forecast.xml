@@ -144,7 +144,7 @@
       </time>
       <time datatype="forecast" from="2014-08-03T21:00:00Z" to="2014-08-03T23:00:00Z">
          <location altitude="130" latitude="51.8625" longitude="-1.4916">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+            <precipitation unit="mm" value="0.0" minvalue="1.6" maxvalue="3.8"/>
 <symbol id="LightCloud" number="2"/>
          </location>
       </time>
@@ -222,7 +222,7 @@
       </time>
       <time datatype="forecast" from="2014-08-03T23:00:00Z" to="2014-08-04T01:00:00Z">
          <location altitude="130" latitude="51.8625" longitude="-1.4916">
-            <precipitation unit="mm" value="0.0" minvalue="0.0" maxvalue="0.0"/>
+            <precipitation unit="mm" value="0.0" minvalue="8.4" maxvalue="9.6"/>
 <symbol id="Sun" number="1"/>
          </location>
       </time>
