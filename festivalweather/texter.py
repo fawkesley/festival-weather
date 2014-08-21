@@ -22,11 +22,15 @@ def send_sms(message):
             print("Dry run, skipping {}".format(recipient))
             continue
 
-        client.messages.create(
-            from_=from_number,
-            to=recipient,
-            body=message
-        )
+        print("Sending with Twilio")
+        try:
+            client.messages.create(
+                from_=from_number,
+                to=recipient,
+                body=message
+            )
+        except Exception as e:
+            print("ERROR: {}".format(repr(e)))
 
 
 def get_recipients():
