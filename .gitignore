@@ -1,5 +1,6 @@
 *.pyc
 .*.swp
 settings.sh
+recipients.csv
 /log
 /venv
