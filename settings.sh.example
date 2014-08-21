@@ -10,8 +10,3 @@ export LOCATION_TIMEZONE="Europe/London"
 export TWILIO_SID="<your account sid>"
 export TWILIO_AUTH_TOKEN="<your secret auth token>"
 export TWILIO_FROM_NUMBER="<your from number"
-
-# Recipient details
-
-export RECIPIENT_NUMBERS="+447790000000,+447791876543"
-
